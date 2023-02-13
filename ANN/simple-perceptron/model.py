@@ -22,7 +22,7 @@ class Perceptron:
                 self.b_ += update
                 errors += int(update != 0.0)
             self.errors_.append(errors)
-        self.save()
+
         return self
 
     def net_input(self, X):
